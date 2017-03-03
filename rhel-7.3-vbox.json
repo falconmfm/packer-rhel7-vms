@@ -1,8 +1,6 @@
 {
 	"variables": {
-		"vm_name": "rhel-7.3-vbox",
-		"iso_url": "{{env `ISO_URL`}}",
-		"iso_sha256": "120acbca7b3d55465eb9f8ef53ad7365f2997d42d4f83d7cc285bf5c71e1131f"
+		"vm_name": "rhel-7.3-vbox"
 	},
 
 	"builders": [{
@@ -18,10 +16,10 @@
 			["modifyvm", "{{.Name}}", "--rtcuseutc", "on"],
 			["modifyvm", "{{.Name}}", "--bioslogodisplaytime", "1"]
 		],
-		"iso_checksum_type": "sha256",
-		"iso_url": "{{user `iso_url`}}",
-		"iso_checksum": "{{user `iso_sha256`}}",
-		"http_directory": "http",
+      "iso_checksum": "c455ee948e872ad2194bdddd39045b83634e8613249182b88f549bb2319d97eb",
+      "iso_checksum_type": "sha256",
+      "iso_url": "file:///E:\\REPOSITORIO\\Descargas\\CentOS-7-x86_64-DVD-1611.iso",
+      "http_directory": "http",
 		"ssh_wait_timeout": "20m",
 		"ssh_username": "vagrant",
 		"ssh_password": "vagrant",

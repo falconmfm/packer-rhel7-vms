@@ -1,12 +1,3 @@
-.DS_Store
-*.box
-*.gz
-*.iso
-*.tar
-*.swp
-crash.log
-output*
-.vagrant/
-box/
-packer_cache/
-tmp/
+output-virtualbox-iso
+packer_cache
+rhel-7.3-vbox.box
